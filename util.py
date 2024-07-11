@@ -36,7 +36,7 @@ def get_parking_spots_bboxes(connected_components):
     coef = 1
     for i in range(1, totalLabels):
 
-        # Now extract the coordinate points
+        # извлекаем координаты
         x1 = int(values[i, cv2.CC_STAT_LEFT] * coef)
         y1 = int(values[i, cv2.CC_STAT_TOP] * coef)
         w = int(values[i, cv2.CC_STAT_WIDTH] * coef)
